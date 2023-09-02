@@ -17,6 +17,7 @@ gem "image_processing", "~> 1.2"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "simple_form"
+gem "actionpack-page_caching"
 
 # gem "kredis"
 # gem "bcrypt", "~> 3.1.7"
