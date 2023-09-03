@@ -8,10 +8,8 @@
 
 <% @books.each do |book| %>
   <div class="card shadow my-5 p-5">
-    <% cache book do %>
-      <%= render book %>
-      <p><%= link_to "Show this book", book, class: 'btn btn-sm btn-outline-primary mt-3' %></p>
-    <% end %>
+    <%= render book, collection: @books, cached: true %>
+    <p><%= link_to "Show this book", book, class: 'btn btn-sm btn-outline-primary mt-3' %></p>
   </div>
 <% end %>
 

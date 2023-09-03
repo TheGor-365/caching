@@ -3,6 +3,7 @@
 </p>
 
 <%= render @store %>
+<%= render partial: 'stores/books_list', locals: { books: @store.books } %>
 
 <div class="btn-group">
   <%= link_to "Edit this store", edit_store_path(@store), class: 'btn btn-sm btn-outline-warning' %>

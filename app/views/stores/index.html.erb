@@ -9,6 +9,7 @@
 <% @stores.each do |store| %>
   <div class="card shadow my-5 p-5">
     <%= render store %>
+    <%#= render store.books.pluck(:author).join(', ') %>
     <p><%= link_to "Show this store", store, class: 'btn btn-sm btn-outline-primary mt-3' %></p>
   </div>
 <% end %>

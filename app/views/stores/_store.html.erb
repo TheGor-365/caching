@@ -4,11 +4,19 @@
       <p class="text-muted">
         Title
       </p>
+      <p class="text-muted">
+        Store Books
+      </p>
     </div>
 
     <div class="col">
       <p class="text-success">
         <%= store.title %>
+      </p>
+      <p class="text-success">
+        <% store.books.each do |book| %>
+          <%= book.author %><br>
+        <% end %>
       </p>
     </div>
   </div>

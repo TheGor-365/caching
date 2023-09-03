@@ -1,0 +1,7 @@
+<p class="text-success">
+  <% @store.books.each do |book| %>
+    <% cache book do %>
+      <%= book.author %><br>
+    <% end %>
+  <% end %>
+</p>
