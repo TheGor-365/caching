@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
   before_action :set_book, only: %i[ show edit update destroy ]
-  caches_page :index
+  # caches_page :index
 
   def index
     @books = Book.all
